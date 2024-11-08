@@ -1,0 +1,55 @@
+.signature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 600px) {
+    .signature {
+      margin-left: 300px;
+      margin-right: 300px;
+      align-items: flex-start;
+    }
+  }
+.styled {
+    position: relative;
+    display: inline-block;
+}
+
+.styled::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -5px;
+    width: 120%;
+    height: 2px;
+    transform: translateX(-50%);
+    background-color: rgba(89, 162, 214, 0.475);
+}
+
+.heart {
+    display: flex;
+}
+
+.svg-heart {
+    padding: 2px;
+    width: 10px;
+}
+@media (min-width: 600px) {
+    .svg-heart {
+      width: 20px;
+    }
+  }
+
+.pepper {
+    display: flex;
+}
+
+.svg-pepper {
+    padding: 2px;
+    width: 10px;
+}
+@media (min-width: 600px) {
+    .svg-pepper {
+      width: 20px;
+    }
+  }
